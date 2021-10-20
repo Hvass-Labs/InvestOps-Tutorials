@@ -1,0 +1,21 @@
+################################################################
+#
+# Python package requirements for InvestOps-Tutorials:
+# https://github.com/Hvass-Labs/InvestOps-Tutorials
+#
+# If you are using Anaconda then you can install all required
+# Python packages by running the following commands in a shell:
+#
+#     conda create --name investops-env python=3
+#     source activate investops-env
+#     pip install -r requirements.txt
+#
+################################################################
+
+investops       # The InvestOps package.
+numpy           # Array-based computing.
+pandas          # Time-series computing.
+notebook        # Jupyter Notebook.
+matplotlib      # Plotting.
+
+################################################################
