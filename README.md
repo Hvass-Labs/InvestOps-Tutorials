@@ -2,6 +2,8 @@
 
 [Original repository on GitHub](https://github.com/Hvass-Labs/InvestOps-Tutorials)
 
+Original author is [Magnus Erik Hvass Pedersen](http://www.hvass-labs.org)
+
 
 ## Introduction
 
