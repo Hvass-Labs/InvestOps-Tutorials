@@ -13,7 +13,7 @@ tools for investing and these are short tutorials on how to use them.
 
 ## Tutorials
 
-1. Portfolio Diversification ([Notebook](https://github.com/Hvass-Labs/InvestOps-Tutorials/blob/master/01_Portfolio_Diversification.ipynb)) ([Google Colab](https://colab.research.google.com/github/Hvass-Labs/InvestOps-Tutorials/blob/master/01_Portfolio_Diversification.ipynb))
+- Portfolio Diversification ([Notebook](https://github.com/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Diversification.ipynb)) ([Google Colab](https://colab.research.google.com/github/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Diversification.ipynb))
 
 
 ## Run in Google Colab
