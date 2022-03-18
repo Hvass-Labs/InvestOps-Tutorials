@@ -13,6 +13,7 @@ tools for investing and these are short tutorials on how to use them.
 
 ## Tutorials
 
+- Long-Term Stock Forecasting ([Notebook](https://github.com/Hvass-Labs/InvestOps-Tutorials/blob/master/Long-Term_Stock_Forecasting.ipynb)) ([Google Colab](https://colab.research.google.com/github/Hvass-Labs/InvestOps-Tutorials/blob/master/Long-Term_Stock_Forecasting.ipynb))
 - Portfolio Diversification ([Notebook](https://github.com/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Diversification.ipynb)) ([Google Colab](https://colab.research.google.com/github/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Diversification.ipynb))
 - Portfolio Group Constraints ([Notebook](https://github.com/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Group_Constraints.ipynb)) ([Google Colab](https://colab.research.google.com/github/Hvass-Labs/InvestOps-Tutorials/blob/master/Portfolio_Group_Constraints.ipynb))
 
