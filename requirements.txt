@@ -17,5 +17,6 @@ numpy           # Array-based computing.
 pandas          # Time-series computing.
 notebook        # Jupyter Notebook.
 matplotlib      # Plotting.
+seaborn         # Advanced plotting.
 
 ################################################################
