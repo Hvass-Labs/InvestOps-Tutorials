@@ -119,7 +119,7 @@ class StockData:
         return pd.read_csv(path, index_col=DATE,
                            parse_dates=True, dayfirst=False, squeeze=True)
 
-    @lru_cache
+    @lru_cache()
     def all_prices(self):
         """
         Get all the share-prices for this stock.
@@ -129,7 +129,7 @@ class StockData:
         filename = f'{self._ticker} Share-Price (Yahoo).csv'
         return self._read_csv(filename=filename)
 
-    @lru_cache
+    @lru_cache()
     def prices(self):
         """
         Get the closing share-prices for this stock.
@@ -138,7 +138,7 @@ class StockData:
         """
         return self.all_prices()[CLOSE].rename(SHARE_PRICE)
 
-    @lru_cache
+    @lru_cache()
     def total_return(self, normalize=True):
         """
         Get the Total Return for this stock, which is the share-price with
@@ -156,7 +156,7 @@ class StockData:
 
         return tot_ret
 
-    @lru_cache
+    @lru_cache()
     def mean_ann_return(self, min_years, max_years,
                         start_date=None, end_date=None, future=True):
         """
@@ -188,7 +188,7 @@ class StockData:
 
         return mean, std
 
-    @lru_cache
+    @lru_cache()
     def sales_per_share(self):
         """
         Get the Sales Per Share data for this stock.
@@ -198,7 +198,7 @@ class StockData:
         filename = f'{self._ticker} Sales Per Share.csv'
         return self._read_csv(filename=filename)
 
-    @lru_cache
+    @lru_cache()
     def earnings_per_share(self):
         """
         Get the Earnings Per Share data for this stock.
@@ -208,7 +208,7 @@ class StockData:
         filename = f'{self._ticker} Earnings Per Share.csv'
         return self._read_csv(filename=filename)
 
-    @lru_cache
+    @lru_cache()
     def dividend_per_share(self):
         """
         Get the Dividend Per Share data for this stock.
@@ -218,7 +218,7 @@ class StockData:
         filename = f'{self._ticker} Dividend Per Share.csv'
         return self._read_csv(filename=filename)
 
-    @lru_cache
+    @lru_cache()
     def dividend_yield(self):
         """
         Calculate the Dividend Yield = Dividend Per Share TTM / Share-Price.
@@ -253,7 +253,7 @@ class StockData:
 
         return dividend_yield
 
-    @lru_cache
+    @lru_cache()
     def val_ratio(self, kind, interpolate=True):
         """
         Calculate a valuation ratio such as P/Sales or P/E.
@@ -330,7 +330,7 @@ class StockData:
         """
         return self.val_ratio(kind=PSALES, interpolate=interpolate)
 
-    @lru_cache
+    @lru_cache()
     def growth_sales_per_share(self, future=True):
         """
         Calculate the annual growth in Sales Per Share for this stock.
@@ -349,7 +349,7 @@ class StockData:
         return rel_change(df=sales_per_share, future=future,
                           freq='y', years=1, new_names=SALES_GROWTH)
 
-    @lru_cache
+    @lru_cache()
     def growth_earnings_per_share(self, future=True):
         """
         Calculate the annual growth in Earnings Per Share for this stock.
@@ -368,7 +368,7 @@ class StockData:
         return rel_change(df=earnings_per_share, future=future,
                           freq='y', years=1, new_names=EARNINGS_GROWTH)
 
-    @lru_cache
+    @lru_cache()
     def common_date_range(self, start_date=None, end_date=None):
         """
         Get the common date-range between the Sales Per Share and Share-Price
